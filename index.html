@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muestreo y control de calidad</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Cómo se elige una muestra de una población finita y cómo se vigila un proceso: muestreo aleatorio simple, estratificado, sistemático, por conglomerados, en etapas y doble, estimadores de razón y regresión, marcos imperfectos, respuesta aleatorizada, captura-recaptura, gráficos de control y planes de muestreo de aceptación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Muestreo y control de <b>calidad</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Mil hogares bien elegidos dicen más que cien mil mal elegidos</h1>
+  <p class="lede">Una encuesta de hogares no puede visitar a toda la ciudad, y una embotelladora no puede abrir cada botella. En los dos casos se mira una parte para decidir sobre el todo, y en los dos casos la forma de elegir esa parte decide cuánto se puede confiar en la respuesta. Este curso desarrolla la teoría del muestreo de poblaciones finitas, con las fórmulas de varianza demostradas, y la del control estadístico de procesos, con laboratorios donde se sortea la muestra, se mueven los estratos y se ve un proceso salir de control.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de estadística y actuaría, y para quien diseña encuestas, audita o controla la calidad de una producción. Conviene haber leído Inferencia estadística: estimadores, sesgo y error cuadrático medio, intervalos de confianza y contrastes se usan sin repetirlos. La regresión que usan los estimadores de regresión está en Modelos lineales, y se usa sin volver a desarrollarla.</p>
+    <p><b>Cómo está hecho.</b> Dos casos recorren el curso. En las tres primeras partes, una encuesta de hogares de una ciudad con barrios, manzanas y viviendas, que mide el ingreso, el gasto y la proporción de hogares con internet. En la cuarta, una embotelladora que llena botellas de 500 ml y recibe lotes de tapas de un proveedor. Los laboratorios sortean muestras sobre un mapa de la ciudad para comparar diseños con el mismo presupuesto, y simulan la línea de llenado para ver un gráfico de control y la curva característica de un plan de aceptación. Las prácticas usan R (`survey`, `sampling`, `qcc`, `AcceptanceSampling`) o Python (NumPy, `pandas`).</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Las bases del muestreo</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="elementos-de-muestreo"><span class="n">01</span><b>Elementos de muestreo</b><p>Población, marco, diseño muestral y error de muestreo: el vocabulario y el enfoque basado en el diseño.</p></div>
+    <div class="mod soon" data-id="muestreo-aleatorio-simple"><span class="n">02</span><b>Muestreo aleatorio simple</b><p>Todas las muestras de tamaño n igual de probables: estimadores de total, media y proporción, su varianza y el tamaño de muestra.</p></div>
+    <div class="mod soon" data-id="muestreo-estratificado"><span class="n">03</span><b>Muestreo estratificado y técnicas de estratificación</b><p>Dividir la población en grupos homogéneos y muestrear dentro de cada uno, y cómo trazar los estratos.</p></div>
+    <div class="mod soon" data-id="estimadores-de-razon-y-regresion"><span class="n">04</span><b>Estimadores indirectos: razón y regresión</b><p>Usar una variable auxiliar conocida para toda la población, como el número de personas por hogar, para estimar mejor.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Muestrear por grupos</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="muestreo-sistematico"><span class="n">05</span><b>Muestreo sistemático</b><p>Un arranque al azar y luego uno de cada k: simple de aplicar y peligroso ante la periodicidad.</p></div>
+    <div class="mod soon" data-id="conglomerados"><span class="n">06</span><b>Muestreo por conglomerados monoetápico</b><p>Elegir manzanas enteras en lugar de hogares sueltos: más barato y menos preciso.</p></div>
+    <div class="mod soon" data-id="submuestreo"><span class="n">07</span><b>Submuestreo en dos y más etapas</b><p>Elegir manzanas y, dentro de cada una, algunos hogares: la varianza tiene una parte por etapa.</p></div>
+    <div class="mod soon" data-id="muestreo-doble"><span class="n">08</span><b>Muestreo doble</b><p>Una muestra grande y barata para medir la variable auxiliar y otra pequeña y cara para medir la de interés.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Cuando la realidad complica</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="marcos-imperfectos-y-errores-ajenos"><span class="n">09</span><b>Marcos imperfectos y errores ajenos al muestreo</b><p>Cobertura, duplicados, no respuesta y medición: errores que no bajan con más muestra.</p></div>
+    <div class="mod soon" data-id="respuesta-aleatorizada-y-captura-recaptura"><span class="n">10</span><b>Métodos de respuesta aleatorizada y de captura, marca y recaptura</b><p>Preguntar lo comprometedor sin saber quién responde qué, y contar una población que no se puede listar.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Control estadístico de calidad</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="calidad-y-variacion"><span class="n">11</span><b>Calidad, variación y costos de calidad</b><p>Por qué ninguna botella sale igual, qué es calidad y cuánto cuesta no tenerla.</p></div>
+    <div class="mod soon" data-id="graficos-de-control"><span class="n">12</span><b>Teoría del gráfico de control</b><p>Muestras pequeñas a intervalos regulares para saber si el proceso sigue bajo control estadístico.</p></div>
+    <div class="mod soon" data-id="aceptacion-por-atributos"><span class="n">13</span><b>Muestreo de aceptación por atributos</b><p>Decidir si se acepta un lote de tapas contando las defectuosas de una muestra, con planes simples, dobles y secuenciales.</p></div>
+    <div class="mod soon" data-id="aceptacion-por-variables-y-continua"><span class="n">14</span><b>Muestreo de aceptación por variables y para producción continua</b><p>Usar la medición y no solo el sí o no, y vigilar una producción que no viene en lotes.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-muestreo" target="_blank" rel="noopener">github.com/aaramirez/mate-muestreo</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
